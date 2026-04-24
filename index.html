@@ -26,14 +26,19 @@
                 <img src="Arctech Logo.png" alt="Arctech Interior LLP" class="nav-logo-img">
             </a>
 
-            <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-
             <nav class="nav-links" id="navLinks">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <button onclick="openCertModal()" class="nav-link nav-link--cnc">CNC MACHINE</button>
+                <a href="#home" class="nav-link">
+                    <span class="nav-text">Home</span>
+                    <span class="nav-icon">🏠</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-text">About</span>
+                    <span class="nav-icon">ℹ️</span>
+                </a>
+                <button onclick="openCertModal()" class="nav-link nav-link--cnc">
+                    <span class="nav-text">CNC <span class="hide-mobile">MACHINE</span></span>
+                    <span class="nav-icon">⚙️</span>
+                </button>
             </nav>
         </div>
     </header>
@@ -43,27 +48,26 @@
          ====================================================== -->
     <section class="hero-fullscreen" id="home">
 
-        <!-- Slide 1: Construction -->
-        <div class="hero-slide active"
-            style="background-image: url('images/slider/slider_construction_1771807324360.png');">
+        <!-- Slide 1: Interior -->
+        <div class="hero-slide active" style="background-image: url('images/slider/slider_interior_1771807340963.png');">
         </div>
-        <!-- Slide 2: Interior -->
-        <div class="hero-slide" style="background-image: url('images/slider/slider_interior_1771807340963.png');">
+        <!-- Slide 2: CNC Machine -->
+        <div class="hero-slide" style="background-image: url('images/slider/cncslider.png');">
         </div>
-        <!-- Slide 3: Architecture -->
-        <div class="hero-slide" style="background-image: url('images/slider/slider_architecture_1771807359942.png');">
+        <!-- Slide 3: Construction -->
+        <div class="hero-slide" style="background-image: url('images/slider/slider_construction_1771807324360.png');">
         </div>
         <!-- Slide 4: Maintenance -->
         <div class="hero-slide" style="background-image: url('images/slider/slider_maintenance_1771807379635.png');">
         </div>
-        <!-- Slide 5: Repair -->
+        <!-- Slide 5: Architecture -->
+        <div class="hero-slide" style="background-image: url('images/slider/slider_architecture_1771807359942.png');">
+        </div>
+        <!-- Slide 6: Repair -->
         <div class="hero-slide" style="background-image: url('images/slider/slider_repair_1771807399869.png');">
         </div>
-        <!-- Slide 6: Estimation -->
+        <!-- Slide 7: Estimation -->
         <div class="hero-slide" style="background-image: url('images/slider/slider_estimation_1771807418109.png');">
-        </div>
-        <!-- Slide 7: CNC Machine -->
-        <div class="hero-slide" style="background-image: url('images/slider/cncslider.png');">
         </div>
 
         <!-- Full dark overlay -->
@@ -79,28 +83,33 @@
         <!-- ZONE 3: BOTTOM LEFT - Per-slide captions (JS driven) -->
         <div class="slide-captions">
             <div class="slide-caption active">
-                <span class="slide-tag">🏗️ Construction</span>
-                <h2 class="slide-heading">Building Mumbai's Backbone<br>Since 1970</h2>
-                <p class="slide-desc">Trusted by Western Railway &amp; MCGM — we build infrastructure that stands for
-                    decades.</p>
-            </div>
-            <div class="slide-caption">
                 <span class="slide-tag">✨ Interior</span>
                 <h2 class="slide-heading">Premium Turnkey<br>Interior Solutions</h2>
                 <p class="slide-desc">From concept to completion, we craft luxurious residential and commercial spaces.
                 </p>
             </div>
             <div class="slide-caption">
-                <span class="slide-tag">🏛️ Architecture</span>
-                <h2 class="slide-heading">Innovative Architectural<br>Designing</h2>
-                <p class="slide-desc">Designing modern, functional, and aesthetically pleasing structures that inspire.
-                </p>
+                <span class="slide-tag">✨ CNC Machine</span>
+                <h2 class="slide-heading">Precision CNC<br>Carving &amp; Design</h2>
+                <p class="slide-desc">High-accuracy 3D carving for architectural and interior masterpieces. Bringing detailed visions to life.</p>
+            </div>
+            <div class="slide-caption">
+                <span class="slide-tag">🏗️ Construction</span>
+                <h2 class="slide-heading">Building Mumbai's Backbone<br>Since 1970</h2>
+                <p class="slide-desc">Trusted by Western Railway &amp; MCGM — we build infrastructure that stands for
+                    decades.</p>
             </div>
             <div class="slide-caption">
                 <span class="slide-tag">🛠️ Home and Building Maintenance</span>
                 <h2 class="slide-heading">Reliable Facility<br>Maintenance</h2>
                 <p class="slide-desc">Ensuring your buildings remain in top condition with professional maintenance
                     services.</p>
+            </div>
+            <div class="slide-caption">
+                <span class="slide-tag">🏛️ Architecture</span>
+                <h2 class="slide-heading">Innovative Architectural<br>Designing</h2>
+                <p class="slide-desc">Designing modern, functional, and aesthetically pleasing structures that inspire.
+                </p>
             </div>
             <div class="slide-caption">
                 <span class="slide-tag">🔧 Repair</span>
@@ -113,11 +122,6 @@
                 <h2 class="slide-heading">Accurate Project<br>Estimation</h2>
                 <p class="slide-desc">Providing precise cost analysis to ensure your projects stay on budget and on
                     time.</p>
-            </div>
-            <div class="slide-caption">
-                <span class="slide-tag">✨ CNC Machine</span>
-                <h2 class="slide-heading">Precision CNC<br>Carving &amp; Design</h2>
-                <p class="slide-desc">High-accuracy 3D carving for architectural and interior masterpieces. Bringing detailed visions to life.</p>
             </div>
         </div>
 
@@ -559,30 +563,51 @@
             </div>
 
             <div class="cert-grid shorts-grid">
-                <!-- 8 YouTube Shorts Embeds -->
+                <!-- 15 YouTube Shorts Embeds -->
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/0L1X8uy2xzQ?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/SxjUTnkokAM?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/h2Uu9EwqBW4?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/L2fvQuf59DE?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/K39_84QaqX8?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
                 <div class="short-card">
                     <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/AscBopQ5Qkw?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/WURHaR-T40g?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Rrr80t0khWg?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/JU8vqLrU23I?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Lujbl2Or56E?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/gFVwTS70PjY?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/l8gTLB6BU4M?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/I8E_Y5yyxxg?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/eoc89wNW1qg?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/-6Si1ekgIv0?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/HJAiTJHee8M?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/9d4HHOzLJD0?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/pimaQvQ3xVA?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="short-card">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/1P7dXBLi-8Q?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/7UhyTR_rXqc?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/b_b56h8NbkI?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="short-card">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/3ou826p4d9g?origin=https://arctechinterior.com" title="YouTube Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div><!-- /cert-grid -->
         </div><!-- /cert-modal-inner -->
@@ -672,7 +697,7 @@
             }
 
             function next() { goTo(current + 1); }
-            function start() { timer = setInterval(next, 12000); }
+            function start() { timer = setInterval(next, 4000); }
             function pause() { clearInterval(timer); }
 
             // Dot clicks
